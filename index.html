@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha da Carolline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oi, Carolline, fiz esse site pra você decidir o nosso 4º encontro (O 3º já está definido)</h1>
+        <p>Escolha suas preferências para o nosso 4º encontro:</p>
+
+ 
+        <div class="section">
+            <label for="food">O que você quer comer? 🍔🍕🥗</label>
+            <select id="food">
+                <option value="pizza">Pizza</option>
+                <option value="sushi">Sushi</option>
+                <option value="hamburguer">Hambúrguer</option>
+                <option value="massa">Massa</option>
+                <option value="sorvete">Sorvete</option>
+                <option value="comida">Comida normal (Carne/Frango e acompanhamentos)</option>
+                <option value="carneiro">Carneiro cozido</option>
+            </select>
+        </div>
+
+
+        <div class="section">
+            <label for="place">Depois, onde você quer ir? (Ou comer nesse canto se tiver)🏞️🏖️🎡</label>
+            <select id="place">
+                <option value="praia">Praia</option>
+                <option value="shopping">Shopping</option>
+                <option value="cinema">Cinema</option>
+                <option value="Lago">Lago</option>
+                <option value="nao-sei">Não sei, você decide</option>
+                
+            </select>
+        </div>
+
+
+        <div class="section">
+            <label for="date">Escolha o dia 📅</label>
+            <input type="date" id="date">
+        </div>
+
+        <!-- Escolha de Imagens -->
+        <div class="section">
+            <p>Escolha um:</p>
+            <div class="images">
+                <label>
+                    <input type="radio" name="image" value="imagem1">
+                    <img src="imagem1.png" alt="Imagem 1">
+                </label>
+                <label>
+                    <input type="radio" name="image" value="imagem2">
+                    <img src="imagem2.png" alt="Imagem 2">
+                </label>
+                <label>
+                    <input type="radio" name="image" value="imagem3">
+                    <img src="imagem3.png" alt="Imagem 3">
+                </label>
+            </div>
+        </div>
+
+        <!-- Botão para Confirmar -->
+        <button id="submit">Confirmar Escolhas</button>
+
+        <!-- Resultado -->
+        <div id="result" class="result hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init('QMD1MVrwT1qJWPiL3'); // Substitua pelo seu User ID
+  
+</script>
+</body>
+</html>
