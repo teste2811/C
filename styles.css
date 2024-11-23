@@ -88,3 +88,16 @@ button:hover {
 .hidden {
     display: none;
 }
+
+#loading {
+    font-size: 18px;
+    color: #ff6347;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
